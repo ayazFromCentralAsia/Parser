@@ -19,7 +19,7 @@ public class WebScraperController {
 
     @GetMapping("/scrape")
     public ScarpedDataResponse scrapeWebsite(@RequestParam(value = "url") String url) throws Exception {
-        return webScraperService.scrapeWebsite(url);
+        return webScraperService.scrapeWildberriesProduct(url);
     }
 
 }
